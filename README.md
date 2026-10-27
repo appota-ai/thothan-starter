@@ -17,8 +17,11 @@ Make Playable games by chatting with Claude or Codex, right from your phone. No 
 
 **Mỗi lần dùng:**
 
-4. Gõ: *"Làm một game về …"* hoặc *"Tiếp tục game của tôi"*.
-5. Khi được gửi một đường link và mã, bấm vào link, đăng nhập Thổ Thần và bấm **Cho phép**.
+4. Trước khi gửi, kiểm tra chế độ dưới ô chat:
+   - Claude: để **Tự động** (mặc định).
+   - Codex: chọn **Toàn quyền truy cập**. Ở chế độ mặc định Codex không có internet nên không đăng nhập được.
+5. Gõ: *"Làm một game về …"* hoặc *"Tiếp tục game của tôi"*.
+6. Khi được gửi một đường link và mã, bấm vào link, đăng nhập Thổ Thần và bấm **Cho phép**.
 
 Game sẽ hiện trong ứng dụng Playable. Muốn cập nhật Thổ Thần, chỉ cần gõ *"cập nhật Thổ Thần"*.
 
@@ -35,8 +38,11 @@ Game sẽ hiện trong ứng dụng Playable. Muốn cập nhật Thổ Thần, 
 
 **Every time:**
 
-4. Type *"Make a game about …"* or *"Continue my game"*.
-5. When you get a link and a code, tap the link, sign in to Thổ Thần, and approve.
+4. Before sending, check the mode under the chat box:
+   - Claude: keep **Auto** (the default).
+   - Codex: pick **Full access**. In its default mode Codex has no internet, so sign-in fails.
+5. Type *"Make a game about …"* or *"Continue my game"*.
+6. When you get a link and a code, tap the link, sign in to Thổ Thần, and approve.
 
 Your game shows up in the Playable app. To update Thổ Thần, type *"update Thổ Thần"*.
 
@@ -47,3 +53,5 @@ Your game shows up in the Playable app. To update Thổ Thần, type *"update Th
 - Approve a sign-in only right after you asked for it. A code someone else sends you would give them your
   account.
 - Publishing always asks you first.
+- Full access lets Codex run commands and use the internet on its cloud machine without asking. It can't reach
+  your phone.

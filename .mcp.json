@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "thothan": {
+      "args": [
+        ".thothan/thothan.mjs",
+        "game",
+        "mcp"
+      ],
+      "command": "node"
+    }
+  }
+}

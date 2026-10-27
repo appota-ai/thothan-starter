@@ -1,0 +1,15 @@
+{
+  "enabledMcpjsonServers": [
+    "thothan"
+  ],
+  "permissions": {
+    "allow": [
+      "mcp__thothan",
+      "Bash(node .thothan/thothan.mjs:*)"
+    ],
+    "ask": [
+      "mcp__thothan__game_genesis_publishGame",
+      "mcp__thothan__game_genesis_publishStudio"
+    ]
+  }
+}

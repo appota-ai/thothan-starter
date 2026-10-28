@@ -26,9 +26,10 @@ playable-game skill (`.agents/skills/playable-game/SKILL.md`).
   - `node .thothan/thothan.mjs game call taka-game-genesis <api> '<json>'`
   - `node .thothan/thothan.mjs game push -m "<note>"`, `game pull`, `game note "<message>"`
 - Not signed in? Call `thothan_login` and give the creator the link and code; they approve it on any device.
-  With the CLI, `login` waits for that approval and saves nothing if stopped, so keep it running: start
-  `node .thothan/thothan.mjs login > /tmp/thothan-login.log 2>&1 &`, read the link and code from the log, give them to
-  the creator, then wait until the log says "Login successful". Never ask for, print, store or commit a key.
+  With the CLI, run `node .thothan/thothan.mjs login --no-wait`, give the creator the link and code it prints, then run
+  `node .thothan/thothan.mjs login --wait` in the foreground (not in the background: some sandboxes stop background
+  processes) until it says "Login successful". If it stops before that, run `login --wait` again; the code
+  lasts 10 minutes. Never ask for, print, store or commit a key.
 - The game itself is kept in Thổ Thần. To continue one in a fresh session, find it with
   `game_genesis_list_studio_projects` and open it with `thothan_open_game` (or `game open --game <gameId>`).
 - Asked to update Thổ Thần: run `d=$(mktemp -d) && git clone -q --depth 1 https://github.com/appota-ai/thothan "$d" && node
